@@ -50,7 +50,7 @@ body {
     transform-origin: center center;
     transition: transform .5s;
     width: 100%;
-    background-color: #B8B8FF;
+    background-color: white;
 }
 
 .carousel__nav {
@@ -129,9 +129,9 @@ body {
 /* YOUTUBE LOGO */
 .youtube-logo {
     background-color: firebrick; 
-    width: 300px;
-    height: 200px;
-    border-radius: 50px;
+    width: 200px;
+    height: 100px;
+    border-radius: 25px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -141,9 +141,9 @@ body {
 .playBtn { 
 	width: 0; 
 	height: 0; 
-	border-top: 60px solid transparent;
-	border-bottom: 60px solid transparent;
-	border-left: 120px solid white;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-left: 60px solid white;
 }
 /* WINDOWS LOGO */
 .microsoft-logo{
@@ -291,4 +291,41 @@ body {
     transform: skewX(21.5deg);
     box-shadow: 0 0 30px black;
     background: #e50914;
+}
+/* GOOGLE LOGO */
+.google-logo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    border-top: 33px solid #ea4335;
+    border-right: 33px solid #4285f4;
+    border-bottom: 33px solid #34a853;
+    border-left: 33px solid #fbbc05;
+    border-radius: 50%;
+    background-color: azure;
+}
+
+.google-logo::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 33px;
+    background-color: #4285f4;
+}
+
+.google-logo::after {
+    content: "";
+    position: absolute;
+    position: absolute;
+    top: -33px;
+    right: -33px;
+    width: 0;
+    height: 0;
+    border-top: 67px solid transparent;
+    border-right: 67px solid azure;
+    
 }
