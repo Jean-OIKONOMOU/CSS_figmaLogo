@@ -5,19 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figma Logo</title>
+    <title>CSS Logos</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="figma-logo">
-        <div class="element left"></div>
-        <div class="element right orange"></div>
-        <div class="element left purple"></div>
-        <div class="element circle blue"></div>
-        <div class="element left clip green"></div>
-    </div>
+    <div class="container">
 
+        <section class="carousel" aria-label="carousel" Tabindex="0">
+            <div class="slides">
+                <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">
+                    <div class="figma-logo">
+                        <div class="element left"></div>
+                        <div class="element right orange"></div>
+                        <div class="element left purple"></div>
+                        <div class="element circle blue"></div>
+                        <div class="element left clip green"></div>
+                    </div>
+                </div>
+                <div class="slides-item slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0">
+                    <div class="figma-logo">
+                        <div class="element left"></div>
+                        <div class="element right orange"></div>
+                        <div class="element left purple"></div>
+                        <div class="element circle blue"></div>
+                        <div class="element left clip green"></div>
+                    </div>
+                </div>
+                <div class="slides-item slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0">
+                    <p>X</p>
+                </div>
+                <div class="slides-item slide-4" id="slide-4" aria-label="slide 4 of 5" tabindex="0">
+                    <p>X</p>
+                </div>
+                <div class="slides-item slide-5" id="slide-5" aria-label="slide 5 of 5" tabindex="0">
+                    <p>X</p>
+                </div>
+            </div>
+        </section>
+        <div class="carousel__nav">
+            <a class="slider-nav" href="#slide-1" aria-label="Go to slide 1">1</a>
+            <a class="slider-nav" href="#slide-2" aria-label="Go to slide 2">2</a>
+            <a class="slider-nav" href="#slide-3" aria-label="Go to slide 3">3</a>
+            <a class="slider-nav" href="#slide-4" aria-label="Go to slide 4">4</a>
+            <a class="slider-nav" href="#slide-5" aria-label="Go to slide 5">5</a>
+        </div>
+    </div>
 </body>
 
 </html>
